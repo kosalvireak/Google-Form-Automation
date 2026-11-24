@@ -52,10 +52,13 @@ flowchart TD
 5. **Spreadsheet summary**
    - `ensureSummaryColumnsAndWrite(...)` finds or creates six summary columns: the top three Spiritual Gifts, the top two DISC profiles, and the report file URL.
    - It writes the calculated values to the submission's row.
+   - ![Update data in google sheet.png](https://github.com/kosalvireak/Google-Form-Automation/blob/main/Spiritual%20Gifts%20&%20Personality%20Assessment/Update%20data%20in%20google%20sheet.png?raw=true)
 
 6. **Result delivery**
    - If an email address was captured, `sendAssessmentResultEmail(...)` sends a formatted HTML email with gift rankings, the leading gift description, DISC scores and profile information, and links to additional assessment resources.
+   - ![Email Response 1.png](https://github.com/kosalvireak/Google-Form-Automation/blob/main/Spiritual%20Gifts%20&%20Personality%20Assessment/Email%20Response%201.png?raw=true)
    - `sendTelegramNotification(...)` sends the respondent details, gift rankings, DISC summary, and DOCX URL to the configured Telegram chat. It skips delivery when `TELEGRAM_BOT_TOKEN` or `TELEGRAM_CHAT_ID` is missing.
+   - ![Assessment Telegram Message.png](https://github.com/kosalvireak/Google-Form-Automation/blob/main/Spiritual%20Gifts%20&%20Personality%20Assessment/Assessment%20Telegram%20Message.png?raw=true)
    - Errors that escape the processing steps are caught by `onFormSubmit` and written to the Apps Script log.
 
 ## Dependencies and configuration
