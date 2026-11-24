@@ -110,6 +110,8 @@ Main Dormitory Folder/
 
 A photo is optional. If it is not provided or cannot be accessed, processing continues without it.
 
+![Group Response as a Folder.png](https://github.com/kosalvireak/Google-Form-Automation/blob/main/The%20Crossroads%20%20Dormitory%20Application%20Form%202026-2027/Group%20Response%20as%20a%20Folder.png?raw=true)
+
 ### 5. Google Document and PDF
 
 The script creates a Google Document with:
@@ -126,6 +128,8 @@ The script creates a Google Document with:
 
 The document is saved in the candidate folder, then exported as a PDF.
 
+![Generated as PDF File.png](https://github.com/kosalvireak/Google-Form-Automation/blob/main/The%20Crossroads%20%20Dormitory%20Application%20Form%202026-2027/Generated%20as%20PDF%20File.png?raw=true)
+
 ### 6. Telegram notification
 
 The script builds a concise candidate summary containing the candidate ID, names, sex, nationality, academic information, emergency contact, PDF link, and registration date.
@@ -136,6 +140,8 @@ It sends:
 - A text-only summary when no photo is available
 
 Telegram delivery uses the configured bot token and chat ID.
+
+![./Bot send response to telegram.png](https://github.com/kosalvireak/Google-Form-Automation/blob/main/The%20Crossroads%20%20Dormitory%20Application%20Form%202026-2027/Bot%20send%20response%20to%20telegram.png?raw=true)
 
 ### 7. Google Sheet update
 
